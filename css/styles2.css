@@ -1,0 +1,187 @@
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  overflow: hidden !important;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  overflow: hidden;
+  font-family: "Ubuntu";
+  font-weight: 700;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+a,
+i {
+  text-decoration: none;
+  color: black;
+}
+
+.fas {
+  margin-right: 1rem;
+}
+
+/**************************************************************/
+
+.header {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+.contenedor {
+  max-width: 59rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin: auto;
+  text-align: center;
+  z-index: 2;
+}
+
+.contenedor-tabla {
+  max-width: 79rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin: auto;
+  text-align: center;
+  z-index: 2;
+}
+
+.header-video {
+  position: absolute;
+  /* Para que este en la esquina superior */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.header-video video {
+  min-width: 100%;
+  min-height: 100vh; /*Dejo de funcionar el 100%*/
+}
+
+.header-overlay {
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: black;
+  z-index: 1;
+  opacity: 0.55; /* De 0 a 1 */
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 15rem;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+
+  width: 80%;
+  padding: 1rem;
+}
+.formulario h1 {
+  font-size: 3rem;
+}
+
+input,
+button {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  height: 6rem;
+  border: none;
+  padding-left: 2rem;
+  color: gray;
+}
+.redondeado {
+  border-radius: 27px;
+}
+
+.boton {
+  background-color: #f06a7a;
+  color: white;
+  font-size: 2rem;
+}
+.boton:hover {
+  background-color: #e9919b;
+  cursor: pointer;
+}
+
+input:focus {
+  background: none;
+  border: 1px solid white;
+  border-radius: 27px;
+}
+/* *********Elimina bordes al entrar al input******* */
+input,
+.boton:focus,
+input.form-control:focus {
+  outline: none !important;
+  outline-width: 0 !important;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+}
+/* ************************************* */
+
+/**FINDMANY.PHP**/
+
+table {
+  background-color: rgb(184, 37, 37);
+  text-align: left;
+  width: 100%;
+  margin: 0 1rem;
+  min-height: 50%;
+  color: black;
+  border-collapse: collapse;
+  font-size: 2rem;
+  opacity: 0.9;
+}
+
+th,
+td {
+  padding-left: 1rem;
+}
+
+thead {
+  background-color: #f06a7a;
+  border-bottom: solid 5px #e9919b;
+}
+
+tr:nth-child(even) {
+  background-color: #ddd;
+}
+
+@media (max-width: 500px) {
+  table tr {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.registro{
+  margin: -1rem;
+}
+
